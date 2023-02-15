@@ -1,48 +1,139 @@
 body {
-    font-family: Arial, sans-serif;
+  margin: 0;
+}
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
   }
   
-  .navbar {
-    background-color: #337ab7;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
-  }
+  button:hover {
+  background-color: #3e3e3f;
+  transform: scale(1.1);
+  cursor: pointer;
   
-  .navbar a {
-    color: white;
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+}
+.flexContainer div {
+  width: 33%;
+  padding: 25px;
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background-color: #EBEBEB;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  "img3 content3"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .img3, .content1, .content2, .content3 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+.heroGrid{
+  display: grid;
+  grid-template-areas: 'hero1 hero2';
+  grid-template-rows: 25% 75%;
+  font-family: "Lora";
+  color: white;
+  text-align: center;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.response {
+  width: auto;
+  height: 45px;
   }
-  
-  .jumbotron {
-    background-color: #337ab7;
-    color: white;
-    padding: 100px;
-    text-align: center;
-  }
-  
-  .jumbotron h1 {
-    font-weight: bold;
-    font-size: 48px;
-  }
-  
-  .jumbotron p {
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
-  
-  .jumbotron a {
-    background-color: white;
-    color: #337ab7;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .col-sm {
-    background-color: #f2f2f2;
-    padding: 50px;
-    text-align: center;
-    border: 1px solid #ccc;
-    height: 200px;
-  }
-  
+
+  .responses {
+    width: 200%; 
+    height: auto;
+  }  
